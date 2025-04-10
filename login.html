@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bejelentkezés</title>
+    <script src="https://unpkg.com/localforage/dist/localforage.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-6 rounded-2xl shadow-xl w-full max-w-md">
+      <h1 class="text-2xl font-bold mb-4">🔑 Bejelentkezés</h1>
+      <form id="loginForm" class="space-y-4">
+        <input type="text" id="loginUsername" placeholder="Felhasználónév" class="w-full p-2 border rounded" required />
+        <input type="password" id="loginPassword" placeholder="Jelszó" class="w-full p-2 border rounded" required />
+        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">Bejelentkezés</button>
+      </form>
+      <p class="mt-4 text-center text-sm">
+        Még nincs fiókod? <a href="index.html" class="text-blue-600">Regisztráció</a>
+      </p>
+    </div>
+    <script src="auth.js"></script>
+  </body>
+</html>
